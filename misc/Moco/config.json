@@ -1,0 +1,32 @@
+[
+  {
+    "request" :
+    {
+      "uri" : "/"
+    },
+    "response" :
+    {
+      "text" : "mock server started"
+    }
+  },
+  {
+    "request" :
+    {
+      "uri" : "/hello"
+    },
+    "response" :
+    {
+      "text" : "kitty"
+    }
+  },
+  {
+    "request" :
+    {
+      "uri" : "/itest"
+    },
+    "response" :
+    {
+      "text" : "www.itest.info"
+    }
+  }
+]
