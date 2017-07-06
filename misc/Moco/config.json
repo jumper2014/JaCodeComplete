@@ -1,5 +1,6 @@
 [
   {
+    "description": "root path",
     "request" :
     {
       "uri" : "/"
@@ -27,6 +28,55 @@
     "response" :
     {
       "text" : "www.itest.info"
+    }
+  },
+
+  {
+    "request":
+    {
+      "uri":
+      {
+        "match": "/\\w*/foo"
+      }
+    },
+    "response":
+    {
+      "text": "bar"
+    }
+  },
+
+  {
+    "request" :
+    {
+      "uri" : "/redirect"
+    },
+    "redirectTo" : "http://www.github.com"
+  },
+
+  {
+    "request": {
+      "method" : "post",
+      "uri": "/json",
+      "json": {
+        "foo" : "bar"
+      }
+
+    },
+    "response": {
+      "json": {
+        "foo" : "bar"
+      }
+    }
+  },
+
+  {
+    "request": {
+      "uri": "/template"
+    },
+    "response": {
+      "text": {
+        "template": "${req.queries['name']}"
+      }
     }
   }
 ]

@@ -1,0 +1,6 @@
+[
+  {
+    "request" : { "uri" : "/hello" },
+    "response" : { "text" : "I am a boy." }
+  }
+]

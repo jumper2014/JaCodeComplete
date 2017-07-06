@@ -54,6 +54,12 @@
       <artifactId>json</artifactId>
       <version>20160810</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.mock-server</groupId>
+      <artifactId>mockserver-netty</artifactId>
+      <version>3.10.4</version>
+    </dependency>
   </dependencies>
 
   <build>

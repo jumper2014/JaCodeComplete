@@ -1,0 +1,10 @@
+[
+  {
+    "context": "/boy",
+    "include": "boy.json"
+  },
+  {
+    "context": "/girl",
+    "include": "girl.json"
+  }
+]
