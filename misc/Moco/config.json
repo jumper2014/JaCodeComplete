@@ -20,28 +20,75 @@
       "text" : "kitty"
     }
   },
+
   {
     "request" :
     {
-      "uri" : "/itest"
+      "uri" :{
+        "startsWith": "/startRYN"
+      }
     },
     "response" :
     {
-      "text" : "www.itest.info"
+      "text" : "for start with ryn"
     }
   },
+
+  {
+    "request" :
+    {
+      "uri" :{
+        "startsWith": "/start"
+      }
+    },
+    "response" :
+    {
+      "text" : "for start with sample"
+    }
+  },
+
+
+
+
+  {
+    "request" :
+    {
+      "uri" :{
+        "endsWith": "end"
+      }
+    },
+    "response" :
+    {
+      "text" : "for end with sample"
+    }
+  },
+
+
+  {
+    "request" :
+    {
+      "uri" :{
+        "contain": "moco"
+      }
+    },
+    "response" :
+    {
+      "text" : "for contain with sample"
+    }
+  },
+
 
   {
     "request":
     {
       "uri":
       {
-        "match": "/\\w*/foo"
+        "match": "/\\w*/tanghong"
       }
     },
     "response":
     {
-      "text": "bar"
+      "text": "regex"
     }
   },
 
